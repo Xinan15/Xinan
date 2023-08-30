@@ -6,8 +6,8 @@
   align-items: center;
   height: 70px;
   width: 100%;
-  position: relative;
-  bottom: 0;
+  /* position: relative; */
+  bottom: 30px;
 }
 
 .footerLeft {
@@ -43,6 +43,10 @@
 .socialIcon:hover {
   opacity: 0.5;
   transition: all ease-in-out 0.3s;
+}
+
+.footerIconContainer a {
+  color: #131313 !important;
 }
 
 @media screen and (max-width: 768px) {
