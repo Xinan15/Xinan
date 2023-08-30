@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xinan (Ian) Yang</title>
+  <link rel="shortcut icon" type="image/png" href="images/smile.svg">
+
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+  <!-- stylesheet -->
+
+  <link rel="stylesheet" href="styles\main.css" />
+  <link rel="stylesheet" href="styles\navbar.css" />
+  <link rel="stylesheet" href="styles\about.css" />
+  <link rel="stylesheet" href="styles\footer.css" />
+  <link rel="stylesheet" href="styles\contact_form.css" />
+
+  <!-- font -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" class="navbar__links">Xinan</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="experience.html" class="navbar__links">Projects</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contactme__form" class="navbar__links">Contact</a>
+        </li>
+        <li class="navbar__btn"><a target="_blank" href="resources/Xinan_Yang-CV.pdf" class="button">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Intro Section -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>HELLO, WORLD!</h1>
+        <h2>I'M Xinan (Ian) Yang</h2>
+        <p>A full stack developer, a new graduate, and a lifelong learner.</p>
+        <button id="about" class="main__btn"><a href="#contactme__form">Contact Me </a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <div id="aboutme">
+    <div class="left__container">
+      <h1>ABOUT ME</h1>
+      <p>
+        Hello! I'm Xinan (Ian), a computing and information system graduate at Queen Mary University of London,
+        currently living in London.<br>
+
+        I'm an aspiring software developer and also passionate about data analysis.<br>
+
+        My expertise mainly lies in React, Spring Boot, Node.js, and Vue.<br>
+
+        I enjoy travelling, hiking and meeting new people. Feel free to get in touch! </p>
+      <br />
+      <h1>SKILLS</h1>
+
+      <div class="cardTechStack">
+        <div class="techStack">
+          <h3>HTML</h3>
+        </div>
+        <div class="techStack">
+          <h3>CSS</h3>
+        </div>
+        <div class="techStack">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="techStack">
+          <h3>Java</h3>
+        </div>
+        <div class="techStack">
+          <h3>Python</h3>
+        </div>
+        <div class="techStack">
+          <h3>ReactJS</h3>
+        </div>
+        <div class="techStack">
+          <h3>NodeJS</h3>
+        </div>
+        <div class="techStack">
+          <h3>ExpressJS</h3>
+        </div>
+        <div class="techStack">
+          <h3>Spring Boot</h3>
+        </div>
+        <div class="techStack">
+          <h3>VueJS</h3>
+        </div>
+        <div class="techStack">
+          <h3>MySQL</h3>
+        </div>
+        <div class="techStack">
+          <h3>MongoDB</h3>
+        </div>
+        <div class="techStack">
+          <h3>REST API</h3>
+        </div>
+        <div class="techStack">
+          <h3>Figma</h3>
+        </div>
+        <div class="techStack">
+          <h3>Photoshop</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="right__container">
+      <h1>EDUCATION</h1>
+      <div class="timelineContainer">
+        <div class="timelineInfo">
+          <h2>Queen Mary, University of London</h2>
+          <h3>MSc Computing and Information Systems</h3>
+          <h4>London, UK</h4>
+          <h4>Sep. 2022 – Sep. 2023</h4>
+          <!-- <p><strong>Skills:</strong>JavaScript</p> -->
+        </div>
+        <div class="timelineInfo">
+          <h2>Chang’an University</h2>
+          <h3>BEng Engineering Management</h3>
+          <h4>Xi'an, China</h4>
+          <h4>Sep. 2016 – Jul. 2020</h4>
+          <!-- <p><strong>Skills:</strong>MongoDB</p> -->
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Contact Form -->
+  <div id="contactme__form" class="background">
+    <div class="container">
+      <form id="contact-form">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>GET IN</span>
+                <span>TOUCH</span>
+              </div>
+              <div class="app-contact">
+                <a target="_blank" href="https://www.linkedin.com/in/iany11/">LINKEDIN</a><br>
+                <a target="_blank" href="https://github.com/Xinan15">GITHUB</a>
+              </div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input type="text" class="app-form-control" name="name" placeholder="NAME" required>
+                </div>
+                <div class="app-form-group">
+                  <input type="email" class="app-form-control" name="email" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input type="tel" class="app-form-control" name="number" placeholder="CONTACT NUMBER">
+                </div>
+                <div class="app-form-group message">
+                  <input type="text" class="app-form-control" name="message" placeholder="MESSAGE">
+                </div>
+
+                <div class="app-form-group buttons">
+                  <button type="submit" class="app-form-button">SEND</button>
+                </div>
+
+                <div id="status"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer Sections -->
+  <div class="footerContainer">
+    <div class="footerLeft">
+      <h3>Xinan (Ian) Yang | 2023</h3>
+    </div>
+    <div class="footerRight">
+      <div class="footerIconContainer">
+        <a href="https://github.com/Xinan15" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/github.svg" />
+        </a>
+        <a href="mailto:youkingan11@gmail.com" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/email.svg" />
+        </a>
+        <a href="https://www.linkedin.com/in/iany11/" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/linkedin.svg" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html><br>
