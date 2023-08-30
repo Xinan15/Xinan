@@ -29,7 +29,7 @@ window.onload = function () {
       function () {
         form.reset();
         status.classList.add("success");
-        status.innerHTML = "Thanks! I'll get back as soon as I can.";
+        status.innerHTML = "Thanks! I'll get back to you as soon as possible";
       },
       function (error) {
         status.classList.add("error");
