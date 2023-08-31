@@ -58,12 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToSection(section);
   }
 
+  const baseUrl = "/Xinan"; // Update this to match your GitHub Pages repository path
+
   // For Home link
-  const homeLink = document.querySelector('.navbar__item a[href="index.html"]');
+  const homeLink = document.querySelector(`${baseUrl} .navbar__item a[href="index.html"]`);
   homeLink.addEventListener("click", function (event) {
     if (
-      window.location.pathname === "/index.html" ||
-      window.location.pathname === "/"
+      window.location.pathname === `${baseUrl}/index.html` ||
+      window.location.pathname === `${baseUrl}/`
     ) {
       event.preventDefault();
       window.scrollTo({
@@ -74,18 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // For About and Contact sections
-  const aboutLink = document.querySelector('.navbar__item a[href="#aboutme"]');
-  const contactLink = document.querySelector(
-    '.navbar__item a[href="#contactme__form"]'
-  );
+  const aboutLink = document.querySelector(`${baseUrl} .navbar__item a[href="#aboutme"]`);
+  const contactLink = document.querySelector(`${baseUrl} .navbar__item a[href="#contactme__form"]`);
 
   aboutLink.addEventListener("click", function (event) {
     event.preventDefault();
     if (
-      window.location.pathname !== "/index.html" &&
-      window.location.pathname !== "/"
+      window.location.pathname !== `${baseUrl}/index.html` &&
+      window.location.pathname !== `${baseUrl}/`
     ) {
-      window.location.href = "/index.html?section=aboutme";
+      history.pushState({}, "", `${baseUrl}/index.html?section=aboutme`);
     } else {
       scrollToSection("aboutme");
     }
@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
   contactLink.addEventListener("click", function (event) {
     event.preventDefault();
     if (
-      window.location.pathname !== "/index.html" &&
-      window.location.pathname !== "/"
+      window.location.pathname !== `${baseUrl}/index.html` &&
+      window.location.pathname !== `${baseUrl}/`
     ) {
-      window.location.href = "/index.html?section=contactme__form";
+      history.pushState({}, "", `${baseUrl}/index.html?section=contactme__form`);
     } else {
       scrollToSection("contactme__form");
     }
