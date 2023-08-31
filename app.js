@@ -38,3 +38,28 @@ window.onload = function () {
     );
   });
 };
+
+// Smooth scrolling
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutLink = document.querySelector('a[href="#aboutme"]');
+  const contactLink = document.querySelector('a[href="#contactme__form"]');
+  const homeLink = document.querySelector('a[href="index.html"]');
+
+  aboutLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    const aboutSection = document.getElementById("aboutme");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  contactLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    const contactSection = document.getElementById("contactme__form");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  // Smooth scroll to the top for the 'Home' link
+  homeLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
