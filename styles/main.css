@@ -34,8 +34,9 @@
   font-size: 4rem;
   background-color: #87ceeb;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  -webkit-background-clip: text; /* For Chrome, Safari */
+  -moz-background-clip: text;    /* For Firefox */
+  background-clip: text;         /* Standard syntax */
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -46,8 +47,9 @@
   background-color: #ff8177;
   background-image: linear-gradient(-20deg, #2042a8 60%, #21d4fd 100%);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  -webkit-background-clip: text; /* For Chrome, Safari */
+  -moz-background-clip: text;    /* For Firefox */
+  background-clip: text;         /* Standard syntax */
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
