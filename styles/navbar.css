@@ -203,7 +203,7 @@ a[data-tooltip]:hover::after {
   }
 
   .navbar__btn {
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   .button {
